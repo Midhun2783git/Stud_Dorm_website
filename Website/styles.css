@@ -108,6 +108,22 @@
     border-radius: 8px;
 }
 
+/* Logo Styling */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Ensure the header content doesn't overlap the logo */
+header {
+    padding-left: 120px; /* Adjust padding to accommodate logo width */
+    position: relative;
+}
+
+
 /* Optional: Add styles for the body or other elements */
 body {
     background-color: var(--color-background); /* Set background color */
