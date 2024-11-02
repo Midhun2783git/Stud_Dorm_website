@@ -128,6 +128,7 @@
     transform: translate(-50%, -50%);
     transition: transform 0.1s ease;
     animation: pulse 1.5s infinite ease-in-out;
+}
 
 .custom-cursor.active {
     width: 30px;  /* Increased size */
@@ -135,6 +136,22 @@
     background: linear-gradient(135deg, #FAF6F2, #683B2B);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.1s ease, background 0.3s ease;
+}
+
+/* Glow effect */
+.custom-cursor.active {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+/* Trail effect */
+.trail {
+    position: absolute;
+    width: 10px; /* Size of the trail */
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(104, 59, 43, 0.5);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
 .custom-cursor.click {

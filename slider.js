@@ -25,6 +25,22 @@ function prevSlide() {
     showSlide(currentIndex);
 }
 
+function createTrail(x, y) {
+    const trail = document.createElement('div');
+    trail.className = 'trail';
+    document.body.appendChild(trail);
+    trail.style.left = `${x}px`;
+    trail.style.top = `${y}px`;
+
+    // Fade out and remove the trail
+    setTimeout(() => {
+        trail.style.opacity = '0';
+        setTimeout(() => {
+            trail.remove();
+        }, 300); // Match the duration of the opacity transition
+    }, 50); // Short delay before fading out
+}
+
 // Attach event listeners to buttons
 nextButton.addEventListener('click', nextSlide);
 prevButton.addEventListener('click', prevSlide);
@@ -72,6 +88,8 @@ document.querySelectorAll('a, button').forEach((element) => {
 document.addEventListener('mousemove', (e) => {
     customCursor.style.left = `${e.pageX}px`;
     customCursor.style.top = `${e.pageY}px`;
+
+    createTrail(e.pageX, e.pageY);  // create trail efx
 });
 
 // Click animation
