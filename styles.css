@@ -117,6 +117,24 @@
     height: auto;
 }
 
+.custom-cursor {
+    position: absolute;
+    width: 20px;             /* Size of the cursor */
+    height: 20px;
+    border-radius: 50%;      /* Make it circular */
+    background-color: rgba(104, 59, 43, 0.8);  /* Aesthetic color */
+    pointer-events: none;    /* Prevent it from interfering with elements */
+    transform: translate(-50%, -50%); /* Center the cursor */
+    transition: transform 0.1s ease;  /* Smooth effect */
+}
+
+.custom-cursor.active {
+    width: 30px;  /* Increased size */
+    height: 30px;
+    background-color: rgba(212, 158, 141, 0.8);  /* Lighter color */
+    transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
 /* Contact Section Styling */
 .contact-section {
     position: relative;
@@ -191,6 +209,7 @@ body {
     background-color: var(--color-background); /* Set background color */
     color: var(--color-primary); /* Set text color */
     font-family: Arial, sans-serif; /* Font family */
+    cursor: none;
 }
 
 footer {

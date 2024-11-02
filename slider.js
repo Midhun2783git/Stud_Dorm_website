@@ -2,6 +2,7 @@
 const slides = document.querySelectorAll('.slide');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
+const customCursor = document.querySelector('.custom-cursor');
 
 let currentIndex = 0;  // Start with the first slide
 
@@ -53,3 +54,17 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(contactContent);
 });
 
+document.addEventListener('mousemove', (e) => {
+    // Set the position of the custom cursor
+    customCursor.style.left = `${e.pageX}px`;
+    customCursor.style.top = `${e.pageY}px`;
+});
+
+document.querySelectorAll('a, button').forEach((element) => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('active');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('active');
+    });
+});
