@@ -122,17 +122,24 @@
     width: 20px;             /* Size of the cursor */
     height: 20px;
     border-radius: 50%;      /* Make it circular */
-    background-color: rgba(104, 59, 43, 0.8);  /* Aesthetic color */
-    pointer-events: none;    /* Prevent it from interfering with elements */
-    transform: translate(-50%, -50%); /* Center the cursor */
-    transition: transform 0.1s ease;  /* Smooth effect */
-}
+    background: linear-gradient(135deg, #D49E8D, #B08401);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    animation: pulse 1.5s infinite ease-in-out;
 
 .custom-cursor.active {
     width: 30px;  /* Increased size */
     height: 30px;
-    background-color: rgba(212, 158, 141, 0.8);  /* Lighter color */
-    transition: transform 0.1s ease, background-color 0.3s ease;
+    background: linear-gradient(135deg, #FAF6F2, #683B2B);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease, background 0.3s ease;
+}
+
+.custom-cursor.click {
+    transform: scale(0.8) translate(-50%, -50%);
+    transition: transform 0.1s ease;
 }
 
 /* Contact Section Styling */
@@ -167,6 +174,19 @@
         background-position: 100% 100%;
     }
 }
+
+/*Cursor animation*/
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1) translate(-50%, -50%);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5) translate(-50%, -50%);
+        opacity: 0.6;
+    }
+}
+
 
 /* Content Styling and Animation */
 .contact-content {

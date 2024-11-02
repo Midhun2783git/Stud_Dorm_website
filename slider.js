@@ -68,3 +68,26 @@ document.querySelectorAll('a, button').forEach((element) => {
         customCursor.classList.remove('active');
     });
 });
+
+document.addEventListener('mousemove', (e) => {
+    customCursor.style.left = `${e.pageX}px`;
+    customCursor.style.top = `${e.pageY}px`;
+});
+
+// Click animation
+document.addEventListener('mousedown', () => {
+    customCursor.classList.add('click');
+});
+document.addEventListener('mouseup', () => {
+    customCursor.classList.remove('click');
+});
+
+// Hover effects for interactive elements
+document.querySelectorAll('a, button').forEach((element) => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('active');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('active');
+    });
+});
