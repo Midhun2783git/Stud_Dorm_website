@@ -6,26 +6,6 @@
     --color-accent: #B08401;     /* Gold */
 }
 
-/* Slider styling */
-.slider {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    border: 2px solid var(--color-secondary); /* Adding border to the slider */
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slide {
-    min-width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-}
 
 /* Controls styling */
 .controls {
@@ -236,8 +216,283 @@
 
 /* Ensure the header content doesn't overlap the logo */
 header {
-    padding-left: 120px; /* Adjust padding to accommodate logo width */
+    display: flex;               /* Use flexbox for layout */
+    flex-direction: column;
+    align-items: center;        /* Center items vertically */
+    padding: 20px;             /* Add padding for better spacing */
+}
+
+.header-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Space between nav and titles */
+    text-align: center;
+}
+
+h1 {
+    margin: 0;                          /* Remove default margin */
+    font-size: 1.8em;                   /* Adjust the size */
+    color: #f80808; 
+}
+
+h2 {
+    margin: 7;                          /* Remove default margin */
+    font-size: 1.2em;                   /* Adjust the size */
+    color: #333 
+}
+
+.slider {
     position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border: 2px solid var(--color-secondary); /* Adding border to the slider */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 10px;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none; /* Removes default underline */
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid transparent; /* Invisible border initially */
+    padding-bottom: 3px; /* Adds spacing between text and underline */
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover {
+    color: #B08401;
+    border-bottom-color: #B08401; /* Underline color changes on hover */
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    background-color: #683B2B;
+    border: none; /* Remove border to keep it simple */
+    color: white;
+    gap: 8px;
+    border-radius: 20px; /* Adjust this for rounded rectangle */
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button.button {
+    margin: 20px auto; /* Center button horizontally and add top margin */
+}
+
+.button:hover {
+    background-color: #f6af68;
+}
+
+/* Button Styles from Uiverse.io by elijahgummer */
+.styled-button {
+    position: relative;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000000;
+    background: linear-gradient(to bottom, #FAF6F2, #FAF6F2);
+    border-radius: 9999px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgb(134, 95, 6), 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #292929;
+    margin-top: 20px; /* Adds spacing above the button */
+}
+
+.styled-button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: linear-gradient(to bottom, #FAF6F2, #FAF6F2);
+    z-index: -1;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+    opacity: 1;
+}
+
+.styled-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 1), 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.styled-button .inner-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #683B2B, #683B2B);
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    border: 1px solid #252525;
+    transition: all 0.2s ease;
+}
+
+.styled-button .inner-button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: linear-gradient(to bottom, #292929, #000000);
+    z-index: -1;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+    opacity: 1;
+}
+
+.styled-button .inner-button .icon {
+    filter: drop-shadow(0 10px 20px rgba(26, 25, 25, 0.9))
+drop-shadow(0 0 4px rgba(0, 0, 0, 1));
+    transition: all 0.4s ease-in-out;
+}
+
+.styled-button .inner-button .icon:hover {
+    filter: drop-shadow(0 10px 20px rgba(50, 50, 50, 1))
+drop-shadow(0 0 20px rgb(255, 255, 255));
+    transform: rotate(-35deg);
+}
+
+.card-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.card-section h2 {
+    font-size: 1.8rem;
+    color: #683B2B; /* Adjust the color as needed */
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    overflow: visible;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+    position: relative;
+}
+
+.front, .back {
+    background-color: #683B2B;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back::before {
+    position: absolute;
+    content: ' ';
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+    animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.front-content {
+    padding: 10px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.card .description .title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card .card-footer {
+    font-size: 0.8rem;
+    color: #AAAAAA;
+}
+
+.card:hover .content {
+    transform: rotateY(180deg);
+}
+
+/* Keyframe animation for the back gradient */
+@keyframes rotation_481 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
