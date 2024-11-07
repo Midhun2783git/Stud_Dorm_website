@@ -438,6 +438,12 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
     font-size: 1rem;
 }
 
+.back-content img {
+    max-width: 80%; /* Adjust as necessary */
+    height: auto;
+    margin-bottom: 10px; /* Space between image and text */
+}
+
 .front-content {
     padding: 10px;
     color: #FFFFFF;
@@ -573,7 +579,7 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
 }
 
 .contact-form h2 {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 20px;
     color: #683B2B;
 }
@@ -607,6 +613,12 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
     background-color: #B08401;
 }
 
+.back-card-1 {
+    background-image: url('Designer\ \(25\).jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 html {
     scroll-behavior: smooth;

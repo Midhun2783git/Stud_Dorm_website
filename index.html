@@ -15,7 +15,7 @@
             <h1>The Student Dorm</h1>
             <h2>Your home, community, and guide away from home</h2> 
         </div>
-        <button class="button">
+        <button class="button" onclick="scrollToSection('facilities')">
             <span class="text">View Services</span>
             <span class="svg">
             <svg
@@ -36,7 +36,7 @@
             <a href="#slider">Home</a>
             <a href="#about">About Us</a>
             <a href="accommodation.html">Accommodation</a>
-            <a href="facilities.html">Facilities</a>
+            <a href="#facilities">Facilities</a>
             <a href="#contact-us">Contact Us</a>
         </nav>
     </header>
@@ -46,10 +46,10 @@
             <section id = "slider" class="slider">
                 <div class="slides">
                     <!-- Each image for the slider -->
-                    <div class="slide active" style="background-image: url('images/image1.jpg');"></div>
-                    <div class="slide" style="background-image: url('images/image2.jpg');"></div>
-                    <div class="slide" style="background-image: url('images/image3.jpg');"></div>
-                    <div class="slide" style="background-image: url('images/image4.jpg');"></div>
+                    <div class="slide active" style="background-image: url('Designer\ \(17\).jpeg');"></div>
+                    <div class="slide" style="background-image: url('Designer\ \(18\).jpeg');"></div>
+                    <div class="slide" style="background-image: url('Designer\ \(19\).jpeg');"></div>
+                    <div class="slide" style="background-image: url('Designer\ \(20\).jpeg');"></div>
                 </div>
                 <!-- Previous and Next buttons -->
                 <div class="controls">
@@ -67,7 +67,7 @@
                 
                         <div class="section-gray-box">
                             <p>The Student Dorm serves as your ultimate student hub in Dubai. We provide comfortable accommodations tailored to your needs, along with essential services like transportation, diverse food options, and local guides. Our platform connects you with the vibrant community around you, ensuring you can thrive in your academic journey. Experience a hassle-free living environment that supports your education and enriches your life. Join us and make the most of your student experience!</p>
-                            <button class="styled-button">
+                            <button class="styled-button" onclick="scrollToSection('contact-us')">
                                 Get in Touch
                                 <div class="inner-button">
                                     <svg
@@ -95,16 +95,15 @@
                     </div>
                 </section>
             <!-- cards -->
-            <section class="card-section">
+            <section id = facilities class="card-section">
                 <h1>Essential student support</h1>
                 <h2>Everything you need to thrive</h2>
                 <div class="card-container">
                     <!-- Card 1 -->
-                    <div class="card">
+                    <div class="card card-1">
                         <div class="content">
-                            <div class="back">
-                                <div class="back-content">
-                                    <svg>...your SVG icon here...</svg>
+                            <div class="back back-card-1">
+                                <div class="back-content">                              
                                     <strong>Hover Me</strong>
                                 </div>
                             </div>
@@ -127,7 +126,7 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="card">
+                    <div class="card card-2">
                         <div class="content">
                             <div class="back">
                                 <div class="back-content">
@@ -154,7 +153,7 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="card">
+                    <div class="card card-3">
                         <div class="content">
                             <div class="back">
                                 <div class="back-content">
@@ -181,7 +180,7 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="card">
+                    <div class="card card-4">
                         <div class="content">
                             <div class="back">
                                 <div class="back-content">
@@ -208,11 +207,11 @@
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="card">
+                    <div class="card card-5">
                         <div class="content">
                             <div class="back">
                                 <div class="back-content">
-                                    <svg>...your SVG icon here...</svg>
+                                    <img> </img>
                                     <strong>Hover Me</strong>
                                 </div>
                             </div>
@@ -277,5 +276,15 @@
     </footer>
     <div class="custom-cursor"></div>
     <script src="slider.js" defer></script>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth'  // This makes the scroll smooth
+                });
+            }
+        }
+        </script>
 </body>
 </html>
