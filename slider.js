@@ -109,3 +109,24 @@ document.querySelectorAll('a, button').forEach((element) => {
         customCursor.classList.remove('active');
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const contactContent = document.querySelector(".contact-content");
+
+    if (contactContent) {  // Check if contactContent exists
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        contactContent.classList.add("visible");
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
+
+        observer.observe(contactContent);
+    } else {
+        console.warn(".contact-content element not found.");
+    }
+});

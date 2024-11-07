@@ -390,6 +390,8 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
     perspective: 1000px;
 }
 
+
+
 .content {
     width: 100%;
     height: 100%;
@@ -400,8 +402,9 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
     position: relative;
 }
 
-.front, .back {
-    background-color: #683B2B;
+.front-1, .back {
+    background-image: url('Designer\ \(25\).jpeg');
+    background-size: cover;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -410,6 +413,49 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
     overflow: hidden;
 }
 
+.front-2, .back {
+    background-image: url('Designer\ \(24\).jpeg');
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.front-3, .back {
+    background-image: url('Designer\ \(23\).jpeg');
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.front-4, .back {
+    background-image: url('Designer\ \(22\).jpeg');
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.front-5, .back {
+    background-image: url('Designer\ \(21\).jpeg');
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+}
 .back {
     display: flex;
     align-items: center;
@@ -429,35 +475,29 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
     position: absolute;
     width: 99%;
     height: 99%;
-    background-color: #151515;
+    background-color: '';
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 1rem;
-}
-
-.back-content img {
-    max-width: 80%; /* Adjust as necessary */
-    height: auto;
-    margin-bottom: 10px; /* Space between image and text */
+    color: '';
+    font-size: 2rem;
 }
 
 .front-content {
     padding: 10px;
-    color: #FFFFFF;
+    color: #683B2B;
     text-align: center;
 }
 
 .card .description .title {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .card .card-footer {
     font-size: 0.8rem;
-    color: #AAAAAA;
+    color: #d01a1a;
 }
 
 .card:hover .content {
@@ -611,13 +651,6 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
 
 .contact-form button:hover {
     background-color: #B08401;
-}
-
-.back-card-1 {
-    background-image: url('Designer\ \(25\).jpeg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 html {
