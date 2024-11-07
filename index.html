@@ -37,7 +37,7 @@
             <a href="#about">About Us</a>
             <a href="accommodation.html">Accommodation</a>
             <a href="facilities.html">Facilities</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="#contact-us">Contact Us</a>
         </nav>
     </header>
     <main>
@@ -59,41 +59,41 @@
             </section>
             <main>
                 <section id="about">
-                    <h2>Your Student Hub</h2>
-                    <p>Everything you need to thrive</p>
-                </section>
-            
-                    <!-- Parallax Section -->
-                <section class="parallax-section">
-                <div class="parallax-content">
-                <p>The Student Dorm serves as your ultimate student hub in Dubai. We provide comfortable accommodations tailored to your needs, along with essential services like transportation, diverse food options, and local guides. Our platform connects you with the vibrant community around you, ensuring you can thrive in your academic journey. Experience a hassle-free living environment that supports your education and enriches your life. Join us and make the most of your student experience!</p>
-                <button class="styled-button">
-                    Get in Touch
-                    <div class="inner-button">
-                        <svg
-                            id="Arrow"
-                            viewBox="0 0 32 32"
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="30px"
-                            width="30px"
-                            class="icon"
-                        >
-                            <defs>
-                                <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
-                                    <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
-                                    <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
-                                </linearGradient>
-                            </defs>
-                            <path
-                                fill="url(#iconGradient)"
-                                d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"
-                            ></path>
-                        </svg>
+                    <div class="section-container">
+                        <div class="heading-container">
+                            <h1>Your Student Hub</h1>
+                            <p class="subheading">Everything you need to thrive</p>
+                        </div>
+                
+                        <div class="section-gray-box">
+                            <p>The Student Dorm serves as your ultimate student hub in Dubai. We provide comfortable accommodations tailored to your needs, along with essential services like transportation, diverse food options, and local guides. Our platform connects you with the vibrant community around you, ensuring you can thrive in your academic journey. Experience a hassle-free living environment that supports your education and enriches your life. Join us and make the most of your student experience!</p>
+                            <button class="styled-button">
+                                Get in Touch
+                                <div class="inner-button">
+                                    <svg
+                                        id="Arrow"
+                                        viewBox="0 0 32 32"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        height="30px"
+                                        width="30px"
+                                        class="icon"
+                                    >
+                                        <defs>
+                                            <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
+                                                <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
+                                                <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path
+                                            fill="url(#iconGradient)"
+                                            d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
                     </div>
-                </button>
-                </div>
                 </section>
-
             <!-- cards -->
             <section class="card-section">
                 <h1>Essential student support</h1>
@@ -196,7 +196,7 @@
                                     <div class="circle" id="bottom"></div>
                                 </div>
                                 <div class="front-content">
-                                    <strong class="badge">Title</strong>
+                                    <strong class="badge">Discount</strong>
                                     <div class="description">
                                         <div class="title">
                                             <p><small>Content</small></p>
@@ -223,7 +223,7 @@
                                     <div class="circle" id="bottom"></div>
                                 </div>
                                 <div class="front-content">
-                                    <strong class="badge">Title</strong>
+                                    <strong class="badge">Events</strong>
                                     <div class="description">
                                         <div class="title">
                                             <p><small>Content</small></p>
@@ -233,12 +233,44 @@
                             </div>
                         </div>
                     </div>
-            
-                    <!-- Duplicate this structure for additional cards and update the content for each as needed -->
                 </div>
-            </section>
-            
+            </section>         
             </main>
+            <!-- Contact Us Section -->
+            <section id="contact-us">
+                <div class="contact-container">
+                    <form class="contact-form">
+                        <h2>Contact Us</h2>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div class="contact-info">
+                        <h2>Get in touch</h2>
+                        <p><img src="images/mail.png" alt="Email Icon" class="icon"> snksdnknd@gmail.com</p>
+                        <h3>Location</h3>
+                        <p><img src="icons/location-icon.png" alt="Location Icon" class="icon"> Dubai, DU AE</p>
+                        <h3>Hours</h3>
+                        <p>Monday 9:00am – 10:00pm<br>
+                        Tuesday 9:00am – 10:00pm<br>
+                        Wednesday 9:00am – 10:00pm<br>
+                        Thursday 9:00am – 10:00pm<br>
+                        Friday 9:00am – 10:00pm<br>
+                        Saturday 9:00am – 6:00pm<br>
+                        Sunday 9:00am – 12:00pm</p>
+                    </div>
+                </div>
+            </section>            
     </main>
     <footer>
         <p>&copy; 2024 Student Accommodation</p>
