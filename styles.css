@@ -546,7 +546,7 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
 .contact-info {
     max-width: 400px;
     width: 100%;
-    padding: 20px;
+    padding: 50px;
     border: 1px solid #ded1bd;
     border-radius: 8px;
     background-color: #683B2B;
@@ -561,7 +561,7 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
 .contact-info p {
     margin: 8px 0;
     color: #ded1bd;
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
     align-items: center;
 }
@@ -573,7 +573,7 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
 }
 
 .contact-form h2 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 20px;
     color: #683B2B;
 }
@@ -581,6 +581,7 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
 .contact-form label {
     margin-top: 10px;
     font-weight: bold;
+    font-size: 24px;
 }
 
 .contact-form input, .contact-form textarea {
