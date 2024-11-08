@@ -654,6 +654,51 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
     background-color: #B08401;
 }
 
+.transportation-info {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #DED1BD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-info {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #DED1BD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.guide-info {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #DED1BD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.discount-info {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #DED1BD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.events-info {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #DED1BD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 html {
     scroll-behavior: smooth;
 }
