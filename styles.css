@@ -486,8 +486,9 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
 
 .front-content {
     padding: 10px;
-    color: #683B2B;
+    color: #fbf8f6;
     text-align: center;
+    
 }
 
 .card .description .title {
