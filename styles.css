@@ -414,7 +414,7 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
 }
 
 .front-2, .back {
-    background-image: url('Designer\ \(24\).jpeg');
+    background-image: url('images/food_options.png');
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -447,7 +447,7 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
 }
 
 .front-5, .back {
-    background-image: url('Designer\ \(21\).jpeg');
+    background-image: url('images/student_events.png');
     background-size: cover;
     position: absolute;
     width: 100%;
