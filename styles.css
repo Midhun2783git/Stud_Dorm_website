@@ -254,14 +254,14 @@ nav a {
     text-decoration: none; /* Removes default underline */
     color: #333;
     font-weight: bold;
-    border-bottom: 2px solid transparent; /* Invisible border initially */
-    padding-bottom: 3px; /* Adds spacing between text and underline */
-    transition: border-color 0.3s ease; /* Smooth transition */
+    border-bottom: 2px solid transparent; 
+    padding-bottom: 3px; 
+    transition: border-color 0.3s ease; 
 }
 
 nav a:hover {
     color: #B08401;
-    border-bottom-color: #B08401; /* Underline color changes on hover */
+    border-bottom-color: #B08401; 
 }
 
 .button {
@@ -270,23 +270,23 @@ nav a:hover {
     justify-content: center;
     padding: 16px 32px;
     background-color: #683B2B;
-    border: none; /* Remove border to keep it simple */
+    border: none; 
     color: white;
     gap: 8px;
-    border-radius: 20px; /* Adjust this for rounded rectangle */
+    border-radius: 20px; 
     cursor: pointer;
     transition: all 0.3s;
 }
 
 button.button {
-    margin: 20px auto; /* Center button horizontally and add top margin */
+    margin: 20px auto; 
 }
 
 .button:hover {
     background-color: #f6af68;
 }
 
-/* Button Styles from Uiverse.io by elijahgummer */
+
 .styled-button {
     position: relative;
     padding: 1rem 2rem;
@@ -302,7 +302,7 @@ button.button {
     align-items: center;
     justify-content: center;
     border: 1px solid #292929;
-    margin-top: 20px; /* Adds spacing above the button */
+    margin-top: 20px; 
 }
 
 .styled-button::before {
@@ -461,6 +461,8 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
     display: flex;
     align-items: center;
     justify-content: center;
+    backface-visibility: visible;
+    transform: rotateY(180deg);
 }
 
 .back::before {
@@ -476,19 +478,19 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
     position: absolute;
     width: 99%;
     height: 99%;
-    background-color: #d01a1a;
+    background-color: #683B2B;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #000000;
+    color: #FAF6F2;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .front-content {
     padding: 10px;
-    color: #fbf8f6;
+    color: #683B2B;
     text-align: center;
 }
 
@@ -504,16 +506,6 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
 
 .card:hover .content {
     transform: rotateY(180deg);
-}
-
-/* Keyframe animation for the back gradient */
-@keyframes rotation_481 {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 .heading-container {
@@ -554,7 +546,7 @@ drop-shadow(0 0 20px rgb(255, 255, 255));
 
 /* Gray box */
 .section-gray-box {
-    background-color: #696969; /* Adjusted to match gray color */
+    background-color: #683B2B; /* Adjusted to match gray color */
     color: #ffffff;
     padding: 20px;
     border-radius: 8px;
