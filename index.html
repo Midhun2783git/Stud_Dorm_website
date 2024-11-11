@@ -43,16 +43,13 @@
     </header>
     <main>
         <main>
-            <!-- Image Slider Section -->
             <section id = "slider" class="slider">
                 <div class="slides">
-                    <!-- Each image for the slider -->
                     <div class="slide active" style="background-image: url('Designer\ \(17\).jpeg');"></div>
                     <div class="slide" style="background-image: url('Designer\ \(18\).jpeg');"></div>
                     <div class="slide" style="background-image: url('Designer\ \(19\).jpeg');"></div>
                     <div class="slide" style="background-image: url('Designer\ \(20\).jpeg');"></div>
                 </div>
-                <!-- Previous and Next buttons -->
                 <div class="controls">
                     <button class="prev">&lt;</button>
                     <button class="next">&gt;</button>
@@ -95,7 +92,6 @@
                         </div>
                     </div>
                 </section>
-            <!-- cards -->
             <section id = facilities class="card-section">
                 <h1>Essential student support</h1>
                 <h2>Everything you need to thrive</h2>
@@ -226,7 +222,7 @@
             </a>
             </section>         
             </main>
-            <!-- Contact Us Section -->
+
             <section id="contact-us">
                 <div class="contact-container">
                     <form class="contact-form">
@@ -272,7 +268,7 @@
             const section = document.getElementById(sectionId);
             if (section) {
                 section.scrollIntoView({
-                    behavior: 'smooth'  // This makes the scroll smooth
+                    behavior: 'smooth' 
                 });
             }
         }
