@@ -70,9 +70,18 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 400px; 
+    width: 20%; 
+    max-width: 400px; 
     height: auto;
 }
+
+@media (max-width: 600px) {
+    .logo {
+        width: 30%; 
+        max-width: 150px; 
+    }
+}
+
 
 .custom-cursor {
     position: absolute;
